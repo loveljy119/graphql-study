@@ -1,0 +1,20 @@
+https://blog.csdn.net/taiyangdao/article/details/80044880
+
+1、gradle
+ compile 'com.graphql-java:graphql-spring-boot-starter:4.0.0'
+    compile 'com.graphql-java:graphiql-spring-boot-starter:4.0.0'
+2、创建GraphQLSchema对象
+3、1) GET请求GraphQL服务器的Schema
+
+  http://localhost:8080/graphql/schema.json
+
+  2) POST请求查询具体的数据
+
+  http://localhost:8080/graphql
+  {"query":"{hello}"}
+
+   3) 客户端调试
+   http://localhost:8080/graphiql
+    query{
+      hello
+    }
