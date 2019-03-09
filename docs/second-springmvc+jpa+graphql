@@ -1,0 +1,22 @@
+错误:
+    You must configure either the server or JDBC driver
+    https://veiking.iteye.com/blog/2364167
+
+
+springboot+jpa
+
+    https://www.jianshu.com/p/bc56703fe1ee
+
+
+1、项目搭建 service方法编写
+2、SecondController
+    //1、定义usertype  2、定义query api和参数获取  3、定义schema 4、执行查询
+    //input查询 定义input类型
+3、post查询
+    query={user2(id:1){id,username}} 或者 query={user1(username:"zhangsan"){id,username}}
+    {user3(param:{id:2,username:"zhangsan"}){id,username}}
+    说明 ：user1和user2 与参数对应
+            字符串用引号
+            返回多个结果用type(new GraphQLList(userType))  一个结果用type(userType)
+
+

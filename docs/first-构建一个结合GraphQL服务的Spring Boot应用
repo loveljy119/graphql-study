@@ -1,5 +1,5 @@
 https://blog.csdn.net/taiyangdao/article/details/80044880
-
+https://blog.csdn.net/taiyangdao/article/details/80057235
 1、gradle
  compile 'com.graphql-java:graphql-spring-boot-starter:4.0.0'
     compile 'com.graphql-java:graphiql-spring-boot-starter:4.0.0'
@@ -12,9 +12,16 @@ https://blog.csdn.net/taiyangdao/article/details/80044880
 
   http://localhost:8080/graphql
   {"query":"{hello}"}
-
+    Content-Type   application/json
    3) 客户端调试
    http://localhost:8080/graphiql
     query{
       hello
     }
+
+4、地址配置
+    graphql:
+        servlet:
+             mapping: /mygraphql
+             enabled: true
+             corsEnabled: true
